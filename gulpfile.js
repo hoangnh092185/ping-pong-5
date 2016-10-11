@@ -1,13 +1,15 @@
 var utilities = require('gulp-util');
 var gulp = require('gulp');
+var del = require('del');
+
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var buildProduction = utilities.env.production;
-var del = require('del');
 var jshint = require('gulp-jshint');
 var browserSync = require('browser-sync').create();
+var buildProduction = utilities.env.production;
+
 
 var lib = require('bower-files')({
   "overrides":{
