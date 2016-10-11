@@ -40,4 +40,8 @@ build/
 # Node Module #
 #############
 node_modules/
-.DS_store
+.DS_Store
+bower_components/
+build/
+tmp/
+.env
